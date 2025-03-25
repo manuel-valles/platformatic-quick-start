@@ -1,0 +1,16 @@
+{
+  "name": "platformatic-quick-start",
+  "private": true,
+  "scripts": {
+    "dev": "wattpm dev",
+    "build": "wattpm build",
+    "start": "wattpm start"
+  },
+  "dependencies": {
+    "wattpm": "^2.54.0"
+  },
+  "workspaces": [
+    "web/*",
+    "external/*"
+  ]
+}
