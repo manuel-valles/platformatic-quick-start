@@ -16,3 +16,17 @@ This is an intro to [Platformatic](https://platformatic.dev/), a Node.js App Ser
   - [server](./web/node/server.js)
   - `npx wattpm import web/node`. This will update the `package.json` and generate the [watt](./web/node/watt.json) JSON file
 - Run the server: `npm run dev`
+
+## 2. Create a Platformatic Composer
+
+- `npx create-platformatic`
+  - ? Which kind of project do you want to create? `@platformatic/composer`
+  - ? What is the name of the service? `composer`
+  - ? Do you want to create another service? `no`
+  - ? Do you want to use TypeScript? `no`
+  - ? Do you want to init the git repository? `no`
+- Run the server again: `npm run dev`. This will display the URL for the composer: ![Composer](./images/image.png)
+
+> _NOTES_:
+> <br><li> If you add `/node` to the URL, you will trigger the Node Server. This time the count will increase by 1 instead of 2, as expected: http://127.0.0.1:3042/node/
+> <br><li> You can customize how the various services are exposed by changing the [composer config](./web/composer/platformatic.json)
