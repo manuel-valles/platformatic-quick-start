@@ -28,5 +28,21 @@ This is an intro to [Platformatic](https://platformatic.dev/), a Node.js App Ser
 - Run the server again: `npm run dev`. This will display the URL for the composer: ![Composer](./images/image.png)
 
 > _NOTES_:
-> <br><li> If you add `/node` to the URL, you will trigger the Node Server. This time the count will increase by 1 instead of 2, as expected: http://127.0.0.1:3042/node/
-> <br><li> You can customize how the various services are exposed by changing the [composer config](./web/composer/platformatic.json)
+> <br><li> If you add `/node` to the URL, you will trigger the Node Server. This time the count will increase by 1 instead of 2, as expected: http://127.0.0.1:3042/node/ <br><li> You can customize how the various services are exposed by changing the [composer config](./web/composer/platformatic.json)
+
+## 3. Create a Frontend App with NextJS
+
+- `npx create-next-app@latest web/next`
+  ![NextJS](./images/nextjs.png)
+- Import it into the Watt Server: `npx wattpm import web/next` && `npm i`
+- Update [Watt](./web/next/watt.json) to expose `next` server on `/next` path:
+
+  ```json
+  "application": {
+      "basePath": "/next"
+    }
+  ```
+
+- Run the Next App: `npm run dev`
+
+HERE: [17:10:18.399] ERROR (next/1676) <STDERR>: ÔÜá Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
