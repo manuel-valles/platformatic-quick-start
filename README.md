@@ -44,5 +44,3 @@ This is an intro to [Platformatic](https://platformatic.dev/), a Node.js App Ser
   ```
 
 - Run the Next App: `npm run dev`
-
-HERE: [17:10:18.399] ERROR (next/1676) <STDERR>: ÔÜá Lockfile was successfully patched, please run "npm install" to ensure @next/swc dependencies are downloaded
